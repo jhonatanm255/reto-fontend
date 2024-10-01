@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="./output.css" rel="stylesheet">
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+<body class="max-w-[768px]">
+  <div class="block m-auto md:flex md:gap-4"> <!-- Usa gap para el espacio entre secciones -->
+    <section id="contenedor" class="flex flex-col items-center m-auto bg-blue-700 rounded-b-3xl p-6 md:w-1/2"> <!-- Ajusta el ancho para pantallas más grandes -->
+      <h3 class="text-slate-300 mb-4 pt-5 font-semibold text-center">Your Result</h3>
+      <div class="flex flex-col items-center shadow-inner[0_-4px_10px_rgba(0,0,0,0.5)] bg-blue-800 shadow-inner bg-gradient-to-b from-blue-800 to-blue-700 rounded-full mb-4 px-9 py-7">
+        <p class="text-6xl text-slate-100 font-bold mb-1">76</p>
+        <p class="text-xs text-slate-400">of 100</p>
+      </div>
+      <h3 class="text-slate-100 text-2xl font-semibold mb-3">Great</h3>
+      <p class="text-slate-300 mb-7 text-center">You scored higher than 65% of the <br>people who have taken these tests.</p>
+    </section>
+
+    <section class="md:block md:w-1/2"> <!-- Ajusta el ancho para pantallas más grandes -->
+      <h3 class="my-4 mx-6 text-zinc-700 font-bold">Summary</h3>
+      <div class="main grid gap-3"></div>
+      <button class="grid justify-center w-[90%] mx-auto my-5 p-4 text-white font-bold bg-sky-700 hover:bg-sky-900 rounded-full">Continue</button>
+    </section>
+  </div>
+
+  <script src="/src/main.js"></script>
+</body>
+</html>
